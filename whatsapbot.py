@@ -3,18 +3,18 @@ import smtplib
 import time
 
 
-
-
-path = 'C:\\Users\Ahmet\Desktop\geckodriver.exe'
+#download mozilla firefox before use this command
+#pls fill path.
+path = 'C:\\xx\xxx\xxx\geckodriver.exe'
 
 browser = webdriver.Firefox(executable_path=path)
 
 def mailgonder(mesaj):
 
-    sahip='whtspbot@gmail.com'
-    alıcı='yigit_ahmet02@hotmail.com'
-    giris='whtspbot@gmail.com'
-    sifre='78ASD78asd'
+    sahip='yyy.yyy@gmail.com' #this is sender e mail if you want change this.
+    alıcı='xxx_xxx@hotmail.com' #this is receiver e mail pls fill
+    giris='yyy.yyy@gmail.com'#this is sender e mail if you want change this.
+    sifre='password' # this is sender password pls fill.
 
     server=smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
